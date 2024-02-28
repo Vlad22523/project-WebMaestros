@@ -1,1 +1,37 @@
-
+<section class="your-order">
+    <h2 class="order-title">Fresh <span class="order-title-harvest">Harvest</span> Box has got you covered</h2>
+    <p class="order-text">Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or support local
+    farmers. Order your box today and start enjoying the best that nature has to offer!</p>
+    <form class="order-form">
+        <div class="form-content">
+            <h3 class="order-form-title">Ordering <span class="title-form-selected">from us</span>is quick and easy! Fill out <span class="title-form-selected-other">the form</span>below and we will contact you !</h3>
+            <label for="user-name" class="order-lable">
+                <input class="order-input" type="text" name="user-name" id="user-name" placeholder="Full Name"/>
+            </label>
+            <label  for="user-email" class="order-lable">
+                <input class="order-input" type="email" name="user-email" id="user-email" placeholder="Email" />
+            </label>
+            <label for="user-comment" class="order-lable">
+                <textarea class="order-textarea" name="user-comment" id="user-comment" placeholder="Comment"></textarea>
+            </label>
+            <button type="submit" class="send-btn">SEND</button> 
+        </div>
+    </form>
+    <div class="order-img">
+        <picture>
+            <source media="(min-width: 1280px )" srcset="./img/img-your-order/order-photo.jpg 1x,
+                                    ./img/img-your-order/order-photo-2x.jpg 2x">
+            <source media="(min-width: 768px )" srcset="./img/img-your-order/order-photo-tab.jpg 1x,
+                                    ./img/img-your-order/order-photo-tab-2x.jpg 2x">
+            <source media="(min-width: 375px )" srcset="./img/img-your-order/order-photo-mob.jpg 1x,
+                                    ./img/img-your-order/order-photo-mob-2x.jpg 2x">
+            <img src="./img/img-your-order/order-photo-tab.jpg" alt="order-photo-tab" width="528">
+        </picture>
+        <p class="order-follow-text">Follow us on our social networks:</p>
+        <ul class="social-list">
+            <li class="social-item"><a href="https://www.instagram.com/goitclub/ " target="_blank">instagram /</a></li>
+            <li class="social-item"><a href="https://www.facebook.com/goITclub/ " target="_blank">facebook /</a></li>
+            <li class="social-item"><a href="https://www.youtube.com/c/GoIT" target="_blank">youtube /</a></li>
+        </ul>
+    </div>
+</section>
