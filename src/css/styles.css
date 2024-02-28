@@ -4,8 +4,15 @@
   | default @import url()
   |============================
 */
+@import url('./sections.css/header.css');
+@import url('./sections.css/hero.css');
+@import url('./sections.css/how-it-works.css');
+@import url('./sections.css/advertisement.css');
+@import url('./sections.css/vegetables.css');
+@import url('./sections.css/reviews.css');
+@import url('./sections.css/your-order.css');
+@import url('./sections.css/footer.css');
 @import url('./reset.css');
-@import url('./header.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
