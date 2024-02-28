@@ -1,0 +1,93 @@
+.hero {
+  background-color: #576f35;
+  background-image: url('../img/hero/hero-mob.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 375px, cover;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('../img/hero/hero-mob-2x.jpg');
+  }
+}
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 410px;
+}
+
+.hero-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fbfbfb;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url('../img/hero/hero-tab.jpg');
+    background-size: 768px, cover;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: url('../img/hero/hero-tab-2x.jpg');
+    }
+  }
+
+  .container {
+    padding: 122px 32px 589px 32px;
+    max-width: 768px;
+  }
+
+  .hero-title {
+    font-size: 76px;
+    margin-bottom: 25px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 603px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-image: url('../img/hero/hero.jpg');
+    background-size: 650px, cover;
+    background-position: right;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: url('../img/hero/hero-2x.jpg');
+    }
+  }
+
+  .container {
+    padding: 238px 678px 50px 50px;
+    max-width: 1280px;
+  }
+
+  .hero-title {
+    margin-bottom: 128px;
+  }
+
+  .hero-text {
+    width: 472px;
+  }
+}
