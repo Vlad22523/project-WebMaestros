@@ -1,4 +1,6 @@
-.hero {
+.hero-container {
+  padding-top: 100px;
+  padding-bottom: 410px;
   background-color: #576f35;
   background-image: url('../img/hero/hero-mob.jpg');
   background-repeat: no-repeat;
@@ -9,18 +11,12 @@
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero {
+  .hero-container {
     background-image: url('../img/hero/hero-mob-2x.jpg');
   }
 }
 
-.hero-container {
-  padding-top: 100px;
-  padding-bottom: 410px;
-}
-
 .hero-title {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 48px;
   line-height: 1;
@@ -31,7 +27,6 @@
 }
 
 .hero-text {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
@@ -39,27 +34,24 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    background-image: url('../img/hero/hero-tab.jpg');
-    background-size: 768px, cover;
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: url('../img/hero/hero-tab-2x.jpg');
-    }
-  }
-
   .container {
     padding: 0 32px;
     max-width: 768px;
   }
 
   .hero-container {
+    background-image: url('../img/hero/hero-tab.jpg');
+    background-size: 768px, cover;
     padding-top: 122px;
     padding-bottom: 589px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: url('../img/hero/hero-tab-2x.jpg');
+    }
   }
 
   .hero-title {
@@ -75,30 +67,31 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .hero {
+  .container {
+    max-width: 1280px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .hero-container {
     background-image: url('../img/hero/hero.jpg');
     background-size: 650px, cover;
     background-position: right;
+    padding-top: 238px;
+    padding-bottom: 50px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
+    .hero-container {
       background-image: url('../img/hero/hero-2x.jpg');
     }
   }
 
-  .container {
-    max-width: 1280px;
-  }
-
-  .hero-container {
-    padding: 238px 678px 50px 50px;
-  }
-
   .hero-title {
     margin-bottom: 128px;
+    width: 502px;
   }
 
   .hero-text {
