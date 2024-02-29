@@ -38,6 +38,7 @@
   background-color: #576f35;
   border-radius: 12px;
   padding: 10px;
+  margin: -3px -10px 0 -10px;
   color: #fbfbfb;
 }
 
@@ -54,8 +55,8 @@
     line-height: 1.09;
   }
   .advertisement-thumbnail {
-    display: inline-block;
     padding: 16px;
+    margin: -8px -16px 0 -16px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -69,5 +70,6 @@
   }
   .advertisement-thumbnail {
     padding: 16px;
+    margin: 0 0 0 -13px;
   }
 }
