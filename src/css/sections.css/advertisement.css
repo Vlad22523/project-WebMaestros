@@ -63,7 +63,9 @@
   .advertisement {
     max-width: 1080px;
   }
-
+  .advertisement-container {
+    padding: 100px;
+  }
   .advertisement-title {
     font-size: 76px;
     line-height: 1.05;
