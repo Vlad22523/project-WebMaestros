@@ -1,3 +1,6 @@
+h2 {
+  margin: 0;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -37,7 +40,7 @@
   background-color: #576f35;
   border-radius: 12px;
   padding: 10px;
-  margin: -3px -10px 0 -10px;
+  margin: -3px -10px 0px -10px;
   color: #fbfbfb;
 }
 
@@ -48,7 +51,7 @@
   .advertisement-container {
     padding: 100px 16px;
   }
-  .advertisement-title {
+  .advertisement-subtitle {
     font-size: 64px;
     line-height: 1.09;
   }
@@ -64,11 +67,12 @@
   .advertisement-container {
     padding: 100px;
   }
-  .advertisement-title {
+  .advertisement-subtitle {
     font-size: 76px;
     line-height: 1.05;
   }
   .advertisement-thumbnail {
+    display: inline-block;
     padding: 16px;
     margin: 0 0 0 -13px;
   }
