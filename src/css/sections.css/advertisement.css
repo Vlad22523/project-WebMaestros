@@ -17,8 +17,7 @@
   margin: 0 auto;
 }
 .advertisement-container {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 10px;
 }
 
 .advertisement-title {
@@ -47,8 +46,7 @@
     max-width: 704px;
   }
   .advertisement-container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 16px;
   }
   .advertisement-title {
     font-size: 64px;
