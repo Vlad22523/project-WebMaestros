@@ -128,6 +128,10 @@
 .order-textarea:focus {
     border-color: #7A3145;}
 
+.photo-order{
+    border-radius: 15px;
+}
+
 .send-btn {
     width: 100%;
     height: 50px;
@@ -279,7 +283,7 @@
             max-width: 1280px;
             padding: 100px 100px;
         }
-        
+
     .order-title{
         width: 751px;
     }
