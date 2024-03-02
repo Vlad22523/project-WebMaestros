@@ -1,6 +1,8 @@
 .how-it-works {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  max-width: 375px;
 }
 
 .visually-hidden {
@@ -25,19 +27,25 @@
   position: relative;
 }
 
-.how-it-works-shadow {
+.how-it-works-block-img-container {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.how-it-works-block-img-container::before {
+  content: '';
   position: absolute;
-  top: 40px;
-  left: 20px;
-  right: 20px;
-  bottom: 40px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 30px;
   background: linear-gradient(
     0deg,
     rgba(20, 20, 20, 0.3) 0%,
     rgba(20, 20, 20, 0.3) 100%
   );
-  border-radius: 30px;
-  z-index: 2;
 }
 
 .how-it-works-block-img {
@@ -168,6 +176,11 @@
 }
 
 @media (min-width: 768px) {
+  .how-it-works {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+
   .how-it-works-block-first {
     max-height: 100%;
     max-width: 100%;
@@ -205,6 +218,15 @@
     font-size: 16px;
     line-height: 1.25em;
   }
+
+  .how-it-works-steps {
+    width: 100%;
+  }
+
+  .how-it-works-steps-list {
+    width: 100%;
+  }
+
   .how-it-works-steps-list-li-text {
     font-size: 16px;
     line-height: 1.25em;
@@ -214,6 +236,7 @@
 @media (min-width: 1280px) {
   .how-it-works {
     flex-direction: row;
+    max-width: 1280px;
   }
 
   .how-it-works-block-first {
