@@ -1,0 +1,251 @@
+.how-it-works {
+
+}
+
+.how-it-works-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.how-it-works-block-first {
+  display: flex;
+  padding: 40px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  background: #7a3145;
+  /* max-height: 530px;
+  max-width: 375px; */
+  position: relative;
+}
+
+.how-it-works-block-img-container {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.how-it-works-block-img-container::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 30px;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 0.3) 0%,
+    rgba(20, 20, 20, 0.3) 100%
+  );
+}
+
+.how-it-works-block-img {
+  width: 335px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 30px;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 0.3) 0%,
+    rgba(20, 20, 20, 0.3) 100%
+  );
+}
+
+.how-it-works-block-second {
+  display: flex;
+  padding: 80px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  background: #576f35;
+  /* max-height: 654px;
+  max-width: 375px; */
+  position: relative;
+}
+
+.how-it-works-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.how-it-works-title {
+  color: #fbfbfb;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.42px;
+  text-transform: uppercase;
+}
+
+.how-it-works-title span {
+  color: rgba(251, 251, 251, 0.3);
+}
+
+.how-it-works-description {
+  color: #fbfbfb;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.29em;
+}
+
+.how-it-works-steps {
+  display: flex;
+}
+
+.how-it-works-steps-list {
+  list-style: none;
+  counter-reset: step-counter;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.how-it-works-steps-list .how-it-works-steps-list-li-counter {
+  padding: 5px;
+}
+
+.how-it-works-steps-list .how-it-works-steps-list-li-counter::before {
+  counter-increment: step-counter;
+  content: counter(step-counter);
+  fill: #7a3145;
+  stroke-width: 5px;
+  stroke: rgba(122, 49, 69, 0.3);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #7a3145;
+  box-shadow: 0 0 0 5px rgba(122, 49, 69, 0.3);
+  color: #fbfbfb;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.4px;
+}
+
+.how-it-works-steps-list li {
+  padding: 12px 27px 12px 24px;
+  border-radius: 15px;
+  background: #fbfbfb;
+  display: flex;
+  column-gap: 24px;
+  flex-wrap: nowrap;
+}
+
+.how-it-works-steps-list li div {
+  display: flex;
+}
+
+.how-it-works-steps-list-li-text {
+  color: rgba(20, 20, 20, 0.6);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.17em;
+  letter-spacing: -0.24px;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.how-it-works-steps-list-li-text b {
+  color: #141414;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+
+  .how-it-works-container {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+
+  .how-it-works-block-first {
+    /* max-height: 100%;
+    max-width: 100%; */
+    padding: 100px 64px;
+  }
+  
+
+  .how-it-works-block-img  {
+    width: 640px;
+    height: 640px;
+  }
+  
+  .how-it-works-block-second {
+    /* max-height: 100%;
+    max-width: 100%; */
+    padding: 100px 159px;
+    gap: 50px;
+  }
+
+  .how-it-works-text {
+    gap: 25px;
+  }
+
+  .how-it-works-title {
+    font-size: 32px;
+  }
+
+  .how-it-works-description {
+    font-size: 16px;
+    line-height: 1.25em;
+  }
+
+  .how-it-works-steps {
+    width: 100%;
+  }
+
+  .how-it-works-steps-list {
+    width: 100%;
+  }
+
+  .how-it-works-steps-list-li-text {
+    font-size: 16px;
+    line-height: 1.25em;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .how-it-works-container {
+    flex-direction: row;
+    max-width: 1280px;
+  }
+
+  .how-it-works-block-first {
+    padding: 100px;
+  }
+
+  .how-it-works-block-img  {
+    width: 430px;
+    height: 559px;
+  }
+
+  .how-it-works-block-second {
+    padding: 100px 100px 160px 100px;
+    max-width: 650px;
+  }
+}
