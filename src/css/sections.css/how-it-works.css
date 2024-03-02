@@ -1,4 +1,8 @@
 .how-it-works {
+
+}
+
+.how-it-works-container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -22,8 +26,8 @@
   align-items: flex-start;
   gap: 10px;
   background: #7a3145;
-  max-height: 530px;
-  max-width: 375px;
+  /* max-height: 530px;
+  max-width: 375px; */
   position: relative;
 }
 
@@ -67,8 +71,8 @@
   align-items: flex-start;
   gap: 40px;
   background: #576f35;
-  max-height: 654px;
-  max-width: 375px;
+  /* max-height: 654px;
+  max-width: 375px; */
   position: relative;
 }
 
@@ -81,7 +85,6 @@
 
 .how-it-works-title {
   color: #fbfbfb;
-  font-family: 'Inter Tight';
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
@@ -96,11 +99,10 @@
 
 .how-it-works-description {
   color: #fbfbfb;
-  font-family: 'Inter Tight';
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.28571em;
+  line-height: 1.29em;
 }
 
 .how-it-works-steps {
@@ -137,11 +139,10 @@
   background-color: #7a3145;
   box-shadow: 0 0 0 5px rgba(122, 49, 69, 0.3);
   color: #fbfbfb;
-  font-family: 'Inter Tight';
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; /* 100% */
+  line-height: 1;
   letter-spacing: -0.4px;
 }
 
@@ -160,11 +161,10 @@
 
 .how-it-works-steps-list-li-text {
   color: rgba(20, 20, 20, 0.6);
-  font-family: 'Inter Tight';
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.16667em;
+  line-height: 1.17em;
   letter-spacing: -0.24px;
   flex-wrap: wrap;
   align-content: center;
@@ -176,23 +176,18 @@
 }
 
 @media (min-width: 768px) {
-  .how-it-works {
+
+  .how-it-works-container {
     margin: 0 auto;
     max-width: 768px;
   }
 
   .how-it-works-block-first {
-    max-height: 100%;
-    max-width: 100%;
+    /* max-height: 100%;
+    max-width: 100%; */
     padding: 100px 64px;
   }
   
-  .how-it-works-shadow {
-    top: 100px;
-    left: 64px;
-    right: 64px;
-    bottom: 100px;
-  }
 
   .how-it-works-block-img  {
     width: 640px;
@@ -200,8 +195,8 @@
   }
   
   .how-it-works-block-second {
-    max-height: 100%;
-    max-width: 100%;
+    /* max-height: 100%;
+    max-width: 100%; */
     padding: 100px 159px;
     gap: 50px;
   }
@@ -234,20 +229,14 @@
 }
 
 @media (min-width: 1280px) {
-  .how-it-works {
+
+  .how-it-works-container {
     flex-direction: row;
     max-width: 1280px;
   }
 
   .how-it-works-block-first {
     padding: 100px;
-  }
-  
-  .how-it-works-shadow {
-    top: 100px;
-    left: 100px;
-    right: 100px;
-    bottom: 100px;
   }
 
   .how-it-works-block-img  {
