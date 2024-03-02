@@ -1,50 +1,44 @@
-
-.section-reviews {
-max-width: 375px;
-margin: 0 auto;
-padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
+.container-reviews {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 80px 20px;
 }
+
 .section-title-reviews {
-font-size: 48px;
+    font-size: 48px;
     font-weight: 600;
-    line-height: 1.04;
-    color:  rgba(20, 20, 20, 1);
+    line-height: 1;
+    color: rgba(20, 20, 20, 1);
     text-align: left;
     margin-bottom: 20px;
-    letter-spacing: -0.01em;
     text-transform: uppercase;
-    max-width: 335px;
 }
 
 .title-customers {
     font-size: 48px;
     font-weight: 600;
-    line-height: 1.04;
-    color: rgba(87, 111, 53, 1);
-    letter-spacing: -0.01em;
-
+    line-height: 1;
+    color: #576f35;
 }
 
 .reviews-title-text {
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.28;
-    color: rgba(20, 20, 20, 1);
+    line-height: 1.3;
+    color: #141414;
     text-align: left;
     margin-bottom: 40px;
 }
+
 .title-customer {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.25;
-    color: rgba(4, 3, 6, 1);
+    color: #141414;
     text-align: center;
     margin-bottom: 8px;
-    margin-top: 24px;
 }
+
 .text-review {
     font-size: 14px;
     font-weight: 500;
@@ -53,211 +47,98 @@ font-size: 48px;
     max-width: 288px;
     text-align: center;
     margin: 0 auto;
-
 }
 
 .customers-list {
-    display: flex;
-    flex-direction: column;
     gap: 25px;
-    margin: 0 auto;
-
 }
+
 .customers-link-item {
     margin-bottom: 24px;
-    margin: 0 auto;
-    padding-top: 20px;
-
+    border-radius: 50%;
 }
+
 .customers-item {
-    max-width: 335px;
+    padding: 20px 16px;
     border-radius: 24px;
     border: solid 1px rgba(122, 49, 69, 0.3);
     background-color: rgba(251, 251, 251, 1);
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .customers-item:nth-child(2),
 .customers-item:nth-child(3) {
-display: none;
-}
-@media screen and (min-width: 768px) {
-
-.section-reviews {
-    max-width: 768px;
-padding-top: 100px;
-padding-bottom: 100px;
-padding-left: 32px;
-padding-right: 32px;
-}
-.section-title-reviews {
-        font-size: 64px;
-        font-weight: 600;
-        line-height: 1;
-        color: #141414;
-        text-align: left;
-        margin-bottom: 25px;
-        letter-spacing: -0.01em;
-        text-transform: uppercase;
-        max-width: 553px;
-
-       
-}
-.title-customers {
-        font-size: 64px;
-        font-weight: 600;
-        line-height: 1;
-        color: #576F35;
-        letter-spacing: -0.01em;
-
-}
-.reviews-title-text {
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 1.25;
-            color: #141414;
-            text-align: left;
-            margin-bottom: 50px;
-            max-width: 553px;
-}
-.title-customer {
-font-size: 18px;
-    font-weight: 600;
-    line-height: 1.1;
-    color: #141414;
-    text-align: center;
-    margin-bottom: 8px;
-    margin-top: 24px;
-}
-.text-review {
-font-size: 16px;
-    font-weight: 500;
-    line-height: 1.4;
-    color: rgba(20, 20, 20, 0.4);
-    max-width: 288px;
-    text-align: center;
-    margin: 0 auto;
-   
-}
-
-.customers-item {
-width: calc((100% - 36px) / 2);
-border-radius: 24px;
-border: solid 1px rgba(122, 49, 69, 0.3);
-
-
-}
-
-.customers-list {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-justify-content: center;
-gap: 18px;
-
-}
-.customers-item:nth-child(3) {
     display: none;
 }
-.customers-item:nth-child(2) {
-    display: block;
-}
-.customers-link-item {
-margin-bottom: 24px;
-margin: 0 auto;
-padding-top: 20px;
 
-}
-}
-
-@media screen and (min-width: 1280px) {
-
-    .section-reviews {
-        max-width: 1280px;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        padding-left: 100px;
-        padding-right: 101px;
+@media screen and (min-width: 768px) {
+    .container-reviews {
+        max-width: 768px;
+        padding: 100px 32px;
     }
 
     .section-title-reviews {
         font-size: 64px;
-        font-weight: 600;
-        line-height: 1;
-        color: #141414;
-        text-align: left;
         margin-bottom: 25px;
-        letter-spacing: -0.01em;
-        text-transform: uppercase;
-
-
+        max-width: 553px;
     }
 
     .title-customers {
         font-size: 64px;
-        font-weight: 600;
-        line-height: 1;
-        color: #576F35;
-        letter-spacing: -0.01em;
-
     }
 
     .reviews-title-text {
         font-size: 16px;
-        font-weight: 500;
         line-height: 1.25;
-        color: #141414;
-        text-align: left;
         margin-bottom: 50px;
+        max-width: 553px;
     }
 
     .title-customer {
         font-size: 18px;
-        font-weight: 600;
         line-height: 1.1;
-        color: #141414;
-        text-align: center;
-        margin-bottom: 8px;
-        margin-top: 24px;
     }
 
     .text-review {
         font-size: 16px;
-        font-weight: 500;
-        line-height: 1.4;
+        line-height: 1.37;
         color: rgba(20, 20, 20, 0.4);
-        max-width: 288px;
-        text-align: center;
-        margin: 0 auto;
+    }
 
+    .customers-item {
+        width: calc((100% - 18px) / 2);
+    }
+
+    .customers-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .customers-item:nth-child(2) {
+        display: flex;
+    }
+
+    .customers-link-item {}
+}
+
+@media screen and (min-width: 1280px) {
+    .container-reviews {
+        max-width: 1280px;
+        padding: 100px;
     }
 
     .customers-item {
         width: calc((100% - 50px) / 3);
-        border-radius: 24px;
-        border: solid 1px rgba(122, 49, 69, 0.3);
-
-
     }
-.customers-item:nth-child(2),
- .customers-item:nth-child(3) {
-    display: block;
-}
-    .customers-list {
+
+    .customers-item:nth-child(3) {
         display: flex;
-        flex-direction: row;
-        gap: 25px;
-        border: 1px;
-        border-radius: 24px;
-        color: rgba(122, 49, 69, 0.3);
-
     }
 
-    .customers-link-item {
-        margin-bottom: 24px;
-        margin: 0 auto;
-        padding-top: 20px;
-
+    .customers-list {
+        gap: 25px;
     }
 }
