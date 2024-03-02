@@ -15,10 +15,10 @@
   max-width: 375px;
   padding: 80px 10px;
   margin: 0 auto;
+  background-color: #fbfbfb;
 }
 
 .advertisement-subtitle {
-  min-width: 320px;
   font-size: 48px;
   font-weight: 600;
   line-height: 0.96;
@@ -34,7 +34,7 @@
   background-color: #576f35;
   border-radius: 12px;
   padding: 10px;
-  margin: -3px -10px 0px -10px;
+  /* margin: -3px -10px 0px -10px; */
   color: #fbfbfb;
 }
 
@@ -49,7 +49,7 @@
   }
   .advertisement-thumbnail {
     padding: 16px;
-    margin: -8px -16px 0 -16px;
+    /* margin: -8px -16px 0 -16px; */
   }
 }
 @media screen and (min-width: 1280px) {
@@ -64,6 +64,10 @@
   .advertisement-thumbnail {
     display: inline-block;
     padding: 16px;
-    margin: 0 0 0 -13px;
+    /* margin: 0 0 0 -13px; */
+  }
+
+  .text {
+    margin-left: -50px;
   }
 }
