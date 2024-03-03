@@ -16,7 +16,7 @@
       rgba(20, 20, 20, 0.2),
       rgba(20, 20, 20, 0.2)
     ),
-    url('../img/hero/hero-mob.jpg');
+    url('/img/hero/hero-mob.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
