@@ -14,7 +14,7 @@
 @import url('./sections.css/reviews.css');
 @import url('./sections.css/your-order.css');
 @import url('./sections.css/footer.css');
-
+@import url('./sections.css/modal.css');
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
