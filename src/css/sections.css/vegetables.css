@@ -1,7 +1,6 @@
 .vegetables-container {
   max-width: 375px;
   margin: 0 auto;
-
   background: #7a3145;
   padding: 80px 20px;
 }
@@ -36,7 +35,6 @@
 
 .veg-text {
   margin-bottom: 40px;
-
   color: #fbfbfb;
   font-family: 'Inter Tight';
   font-size: 14px;
