@@ -20,7 +20,7 @@
     <title>Vegetables</title>
     
     <script type="module" crossorigin src="/project-WebMaestros/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-WebMaestros/assets/index-51c63332.css">
+    <link rel="stylesheet" href="/project-WebMaestros/assets/index-5fb75cc9.css">
   </head>
   <body>
     <header class="header">
@@ -40,17 +40,17 @@
       </a>
       <ul class="header-list">
         <li class="header-item">
-          <a class="header-link" href="">How It Works</a>
+          <a class="header-link" href="#how-it-works">How It Works</a>
         </li>
         <li class="header-item">
-          <a class="header-link" href="">Vegetables</a>
+          <a class="header-link" href="#vegetables">Vegetables</a>
         </li>
         <li class="header-item">
-          <a class="header-link" href="">Reviews</a>
+          <a class="header-link" href="#reviews">Reviews</a>
         </li>
       </ul>
     </nav>
-    <button type="button" class="open-menu-btn">
+    <button type="button" class="open-menu-btn" id="modal-menu-open-btn">
       <svg class="header-menu" width="32" height="32">
         <use href="../img/icons.svg#icon-menu"></use>
       </svg>
@@ -58,6 +58,55 @@
     <button class="header-button" type="button">SHOP NOW</button>
   </div>
 </header>
+
+    <div class="header-modal backdrop" id="header-modal-menu">
+  <div class="header-modal-menu">
+    <div class="modal">
+      <button type="button" class="modal-close-btn" id="modal-menu-close-btn">
+        <svg class="header-menu-close-icon" width="16" height="16">
+          <use href="../img/icons.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+      <nav class="modal-menu">
+        <ul class="modal-menu-list">
+          <li class="modal-menu-item">
+            <a
+              id="modal-menu-first-btn"
+              class="modal-menu-link"
+              href="#how-it-works"
+              rel="noppener noofferer"
+            >
+              How It Works
+            </a>
+          </li>
+          <li class="modal-menu-item">
+            <a
+              id="modal-menu-second-btn"
+              class="modal-menu-link"
+              href="#vegetables"
+              rel="noppener noofferer"
+            >
+              Vegetables
+            </a>
+          </li>
+          <li class="modal-menu-item">
+            <a
+              id="modal-menu-third-btn"
+              class="modal-menu-link"
+              href="#reviews"
+              rel="noppener noofferer"
+            >
+              Reviews
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#order" rel="noppener noofferer" id="modal-menu-fourth-btn">
+        <button type="button" class="modal-send-btn">Shop now</button>
+      </a>
+    </div>
+  </div>
+</div>
 
 
     <main class="main">
@@ -76,67 +125,68 @@
   </div>
 </section>
 
-      <section class="how-it-works">
-  <div class="how-it-works-container">
-    <h2 class="visually-hidden">How it works</h2>
+      <section class="how-it-works" id="how-it-works">
+    <div class="how-it-works-container">
+      <h2 class="visually-hidden">How it works</h2>
 
-    <div class="how-it-works-block-first">
-      <div class="how-it-works-block-img-container">
-        <picture>
-          <source
-            srcset="/project-WebMaestros/assets/how-it-works-eaab5336.jpg 1x, /project-WebMaestros/assets/how-it-works@2-5eed3514.jpg 2x"
-          />
-          <img
-            class="how-it-works-block-img"
-            src="/project-WebMaestros/assets/how-it-works-eaab5336.jpg"
-            alt="How it works"
-          />
-        </picture>
+      <div class="how-it-works-block-first">
+        <div class="how-it-works-block-img-container">
+          <picture>
+            <source
+              srcset="/project-WebMaestros/assets/how-it-works-eaab5336.jpg 1x, /project-WebMaestros/assets/how-it-works@2-5eed3514.jpg 2x"
+            />
+            <img
+              class="how-it-works-block-img"
+              src="/project-WebMaestros/assets/how-it-works-eaab5336.jpg"
+              alt="How it works"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <div class="how-it-works-block-second">
+        <div class="how-it-works-text">
+          <h3 class="how-it-works-title">
+            To order your <span>vegetable</span> basket, simply follow these
+            <span>easy steps</span>
+          </h3>
+          <p class="how-it-works-description">
+            Our baskets are assembled with care and delivered straight to your
+            doorstep, so you can enjoy the taste of fresh fruit without ever
+            leaving your home.
+          </p>
+        </div>
+        <div class="how-it-works-steps">
+          <ol class="how-it-works-steps-list">
+            <li>
+              <div class="how-it-works-steps-list-li-counter"></div>
+              <div class="how-it-works-steps-list-li-text">
+                <span
+                  >Just choose <b>the vegetable</b> you want to order by
+                  clicking on the checkboxes <b>next to it</b>.</span
+                >
+              </div>
+            </li>
+            <li>
+              <div class="how-it-works-steps-list-li-counter"></div>
+              <div class="how-it-works-steps-list-li-text">
+                <span>Click on <b>the basket</b> and fill out the form. </span>
+              </div>
+            </li>
+            <li>
+              <div class="how-it-works-steps-list-li-counter"></div>
+              <div class="how-it-works-steps-list-li-text">
+                <span
+                  >Sit back and relax! Your <b>fresh vegetables</b> basket will
+                  be delivered.
+                </span>
+              </div>
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
-
-    <div class="how-it-works-block-second">
-      <div class="how-it-works-text">
-        <h3 class="how-it-works-title">
-          To order your <span>vegetable</span> basket, simply follow these
-          <span>easy steps</span>
-        </h3>
-        <p class="how-it-works-description">
-          Our baskets are assembled with care and delivered straight to your
-          doorstep, so you can enjoy the taste of fresh fruit without ever
-          leaving your home.
-        </p>
-      </div>
-      <div class="how-it-works-steps">
-        <ol class="how-it-works-steps-list">
-          <li>
-            <div class="how-it-works-steps-list-li-counter"></div>
-            <div class="how-it-works-steps-list-li-text">
-              <span
-                >Just choose <b>the vegetable</b> you want to order by clicking
-                on the checkboxes <b>next to it</b>.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="how-it-works-steps-list-li-counter"></div>
-            <div class="how-it-works-steps-list-li-text">
-              <span>Click on <b>the basket</b> and fill out the form. </span>
-            </div>
-          </li>
-          <li>
-            <div class="how-it-works-steps-list-li-counter"></div>
-            <div class="how-it-works-steps-list-li-text">
-              <span
-                >Sit back and relax! Your <b>fresh vegetables</b> basket will be
-                delivered.
-              </span>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </div>
+  </section>
 </section>
 
       <section class="advertisement">
@@ -151,7 +201,7 @@
 
       <!-- /** Vegetables **/ -->
 
-<section class="vegetables">
+<section class="vegetables" id="vegetables">
   <div class="vegetables-container">
     <h2 class="veg-title">
       Organic<br /><span class="veg-title-additional">Vegetables</span>
@@ -275,7 +325,8 @@
   </div>
 </section>
 
-      <section class="section-reviews">
+      
+<section class="section-reviews" id="reviews">
   <div class="container-reviews">
     <h2 class="section-title-reviews">
       reviews from our <span class="title-customers">customers</span>
@@ -345,66 +396,103 @@
 
       <!-- YOUR ORDER -->
 
-<section class="your-order">
-    <div class="order-container">
-        <h2 class="order-title">FRESH <span class="order-title-harvest">HARVEST</span> BOX HAS GOT YOU COVERED</h2>
-        <p class="order-text">Our boxes are packed with delicious, nutritious vegetables, 
-            perfect for anyone looking to eat healthier or support local
-        farmers. Order your box today and start enjoying the best that nature has to offer!</p>
-        <div class="order-blocks">
-        <div class="form-content">
-            <h3 
-            class="order-form-title">OEDERING <span class="title-form-selected">FROM US
-                </span>IS QUICK AND EASY! FILL OUT <span class="title-form-selected-other">THE FORM</span>
-                BELOW AND WE WILL CONTACT YOU !
-            </h3>
+<section class="your-order" id="order">
+  <div class="order-container">
+    <h2 class="order-title">
+      FRESH <span class="order-title-harvest">HARVEST</span> BOX HAS GOT YOU
+      COVERED
+    </h2>
+    <p class="order-text">
+      Our boxes are packed with delicious, nutritious vegetables, perfect for
+      anyone looking to eat healthier or support local farmers. Order your box
+      today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="order-blocks">
+      <div class="form-content">
+        <h3 class="order-form-title">
+          OEDERING <span class="title-form-selected">FROM US </span>IS QUICK AND
+          EASY! FILL OUT <span class="title-form-selected-other">THE FORM</span>
+          BELOW AND WE WILL CONTACT YOU !
+        </h3>
         <!-- ORDER FORM -->
-            <form class="order-form">
-                <label for="user-name" class="order-lable">
-                    <input 
-                    class="order-input" 
-                    type="text" 
-                    name="user-name" 
-                    id="user-name" 
-                    placeholder="Full Name" 
-                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required/>
-                </label>
-                <label  for="user-email" class="order-lable">
-                    <input class="order-input" 
-                    type="email" 
-                    name="user-email" 
-                    id="user-email" 
-                    placeholder="Email" 
-                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
-                </label>
-                <label for="user-comment" class="order-lable">
-                    <textarea class="order-textarea" name="user-comment" id="user-comment" placeholder="Comment"></textarea>
-                </label>
-                <button type="submit" class="send-btn" >SEND</button> 
-            </form>
-        </div>
-    <!-- ORDER CONTENT PHOTO NETWORKS -->
-        <div class="order-img">   
-        
-            <picture class="grey-gradient">
-                <source media="(min-width: 1280px )" srcset="/project-WebMaestros/assets/order-photo-785b513d.jpg 1x, /project-WebMaestros/assets/order-photo-2x-a2de4d92.jpg 2x">
-                <source media="(min-width: 768px )" srcset="/project-WebMaestros/assets/order-photo-tab-beed7e36.jpg 1x, /project-WebMaestros/assets/order-photo-tab-2x-d273e148.jpg 2x">
-                <source media="(max-width: 767px )" srcset="/project-WebMaestros/assets/order-photo-mob-62d0b06b.jpg 1x, /project-WebMaestros/assets/order-photo-mob-2x-6ede15b9.jpg 2x">
-                <img class="photo-order" src="/project-WebMaestros/assets/order-photo-tab-beed7e36.jpg" 
-                alt="order-photo-tab" width="528">
-            </picture>
-            
-            <p class="order-follow-text">Follow us on our social networks:</p>
-            <ul class="social-list">
-                <li class="social-item"><a href="https://www.instagram.com/goitclub/ " target="_blank">instagram</a></li>
-                <li class="social-item">/</li>
-                <li class="social-item"><a href="https://www.facebook.com/goITclub/ " target="_blank">facebook</a></li>
-                <li class="social-item">/</li>
-                <li class="social-item"><a href="https://www.youtube.com/c/GoIT" target="_blank">youtube</a></li>
-            </ul>
-            </div>
-        </div>
+        <form class="order-form">
+          <label for="user-name" class="order-lable">
+            <input
+              class="order-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Full Name"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+          </label>
+          <label for="user-email" class="order-lable">
+            <input
+              class="order-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+          </label>
+          <label for="user-comment" class="order-lable">
+            <textarea
+              class="order-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+          <button type="submit" class="send-btn">SEND</button>
+        </form>
+      </div>
+      <!-- ORDER CONTENT PHOTO NETWORKS -->
+      <div class="order-img">
+        <picture class="grey-gradient">
+          <source
+            media="(min-width: 1280px )"
+            srcset="/project-WebMaestros/assets/order-photo-785b513d.jpg 1x, /project-WebMaestros/assets/order-photo-2x-a2de4d92.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px )"
+            srcset="/project-WebMaestros/assets/order-photo-tab-beed7e36.jpg 1x, /project-WebMaestros/assets/order-photo-tab-2x-d273e148.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px )"
+            srcset="/project-WebMaestros/assets/order-photo-mob-62d0b06b.jpg 1x, /project-WebMaestros/assets/order-photo-mob-2x-6ede15b9.jpg 2x"
+          />
+          <img
+            class="photo-order"
+            src="/project-WebMaestros/assets/order-photo-tab-beed7e36.jpg"
+            alt="order-photo-tab"
+            width="528"
+          />
+        </picture>
+
+        <p class="order-follow-text">Follow us on our social networks:</p>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.instagram.com/goitclub/ " target="_blank"
+              >instagram</a
+            >
+          </li>
+          <li class="social-item">/</li>
+          <li class="social-item">
+            <a href="https://www.facebook.com/goITclub/ " target="_blank"
+              >facebook</a
+            >
+          </li>
+          <li class="social-item">/</li>
+          <li class="social-item">
+            <a href="https://www.youtube.com/c/GoIT" target="_blank">youtube</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </section>
 
     </main>
@@ -456,6 +544,55 @@
     </div>
   </div>
 </footer>
+
+    <div class="header-modal backdrop" id="header-modal-menu">
+  <div class="header-modal-menu">
+    <div class="modal">
+      <button type="button" class="modal-close-btn" id="modal-menu-close-btn">
+        <svg class="header-menu-close-icon" width="16" height="16">
+          <use href="../img/icons.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+      <nav class="modal-menu">
+        <ul class="modal-menu-list">
+          <li class="modal-menu-item">
+            <a
+              id="modal-menu-first-btn"
+              class="modal-menu-link"
+              href="#how-it-works"
+              rel="noppener noofferer"
+            >
+              How It Works
+            </a>
+          </li>
+          <li class="modal-menu-item">
+            <a
+              id="modal-menu-second-btn"
+              class="modal-menu-link"
+              href="#vegetables"
+              rel="noppener noofferer"
+            >
+              Vegetables
+            </a>
+          </li>
+          <li class="modal-menu-item">
+            <a
+              id="modal-menu-third-btn"
+              class="modal-menu-link"
+              href="#reviews"
+              rel="noppener noofferer"
+            >
+              Reviews
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#order" rel="noppener noofferer" id="modal-menu-fourth-btn">
+        <button type="button" class="modal-send-btn">Shop now</button>
+      </a>
+    </div>
+  </div>
+</div>
 
     
   </body>
