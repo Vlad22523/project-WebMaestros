@@ -1,4 +1,4 @@
-const headerModalDom = document.getElementById('header-modal-menu');
+const headerModalDom = document.getElementById('header-modal');
 const modalMenuOpenBtnDom = document.getElementById('modal-menu-open-btn');
 const modalMenuCloseBtnDom = document.getElementById('modal-menu-close-btn');
 const modalMenuFirstBtnDom = document.getElementById('modal-menu-first-btn');
