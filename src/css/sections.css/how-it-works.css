@@ -1,5 +1,11 @@
 .how-it-works {
-
+  background: linear-gradient(
+    to bottom,
+    #7a3145 0% 44.76%,
+    #576f35 44.76% 100%
+  );
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .how-it-works-container {
@@ -22,12 +28,10 @@
 
 .how-it-works-block-first {
   display: flex;
-  padding: 40px 20px;
+  padding: 0 20px;
+  margin-bottom: 40px;
   align-items: flex-start;
   gap: 10px;
-  background: #7a3145;
-  /* max-height: 530px;
-  max-width: 375px; */
   position: relative;
 }
 
@@ -66,13 +70,11 @@
 
 .how-it-works-block-second {
   display: flex;
-  padding: 80px 20px;
+  padding: 0 20px;
+  margin-top: 80px;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-  background: #576f35;
-  /* max-height: 654px;
-  max-width: 375px; */
   position: relative;
 }
 
@@ -176,6 +178,14 @@
 }
 
 @media (min-width: 768px) {
+  .how-it-works {
+    background: linear-gradient(
+      to bottom,
+      #7a3145 0% 54.58%,
+      #576f35 54.58% 100%
+    );
+    padding: 100px 0;
+  }
 
   .how-it-works-container {
     margin: 0 auto;
@@ -183,21 +193,18 @@
   }
 
   .how-it-works-block-first {
-    /* max-height: 100%;
-    max-width: 100%; */
-    padding: 100px 64px;
+    padding: 0 64px;
+    margin-bottom: 100px;
   }
-  
 
-  .how-it-works-block-img  {
+  .how-it-works-block-img {
     width: 640px;
     height: 640px;
   }
-  
+
   .how-it-works-block-second {
-    /* max-height: 100%;
-    max-width: 100%; */
-    padding: 100px 159px;
+    margin-top: 100px;
+    padding: 0 159px;
     gap: 50px;
   }
 
@@ -229,6 +236,13 @@
 }
 
 @media (min-width: 1280px) {
+  .how-it-works {
+    background: linear-gradient(
+      to right,
+      #7a3145 0% 49.25%,
+      #576f35 49.25% 100%
+    );
+  }
 
   .how-it-works-container {
     flex-direction: row;
@@ -236,16 +250,18 @@
   }
 
   .how-it-works-block-first {
-    padding: 100px;
+    padding: 0 100px;
+    margin-bottom: 0;
   }
 
-  .how-it-works-block-img  {
+  .how-it-works-block-img {
     width: 430px;
     height: 559px;
   }
 
   .how-it-works-block-second {
-    padding: 100px 100px 160px 100px;
+    padding: 0 100px;
+    margin-top: 0;
     max-width: 650px;
   }
 }

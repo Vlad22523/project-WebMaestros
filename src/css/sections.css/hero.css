@@ -1,11 +1,15 @@
-.hero-flex-container {
+.hero {
   background-color: #576f35;
+  padding-top: 100px;
+}
+
+.hero-flex-container {
   max-width: 375px;
   margin: 0 auto;
 }
 
 .hero-container {
-  padding: 100px 20px 40px 20px;
+  padding: 0 20px 40px 20px;
 }
 
 .hero-background {
@@ -54,12 +58,16 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 122px;
+  }
+
   .hero-flex-container {
     max-width: 768px;
   }
 
   .hero-container {
-    padding: 122px 32px 50px 32px;
+    padding: 0 32px 50px 32px;
   }
 
   .hero-background {
@@ -100,6 +108,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 0;
+  }
+
   .hero-flex-container {
     display: flex;
     max-width: 1280px;

@@ -1,11 +1,12 @@
 .footer {
+  background-color: #7a3145;
+  padding: 40px 0;
 }
 
 .footer-container {
   max-width: 375px;
-  padding: 40px 20px;
+  padding: 0 20px;
   margin: 0 auto;
-  background-color: #7a3145;
 }
 
 .footer-logo-block {
@@ -107,9 +108,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding: 32px 0;
+  }
+
   .footer-container {
     max-width: 768px;
-    padding: 32px 32px;
+    padding: 0 32px;
   }
   .footer {
   }
@@ -181,9 +186,13 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .footer {
+    padding: 50px 0;
+  }
+
   .footer-container {
     max-width: 1280px;
-    padding: 50px 100px;
+    padding: 0 100px;
   }
 
   .footer-logo-block {
