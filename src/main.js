@@ -7,7 +7,9 @@ const modalMenuSecondBtnDom = document.getElementById('modal-menu-second-btn');
 const modalMenuThirdBtnDom = document.getElementById('modal-menu-third-btn');
 const modalMenuFourthBtnDom = document.getElementById('modal-menu-fourth-btn');
 const headerContainerDom = document.querySelector('.header-container');
-const startScrollDistance = 400;
+const startScrollDistance = 100;
+const headerDom = document.querySelector('.header');
+
 // Додаємо слухача подій для відкриття модального вікна при кліці на кнопці
 modalMenuOpenBtnDom.addEventListener('click', () => {
   headerModalDom.classList.add('is-open');
@@ -38,6 +40,23 @@ modalMenuFourthBtnDom.addEventListener('click', () => {
 // Визначаємо змінну isResize та функцію для визначення зміни розміру вікна
 let isResize;
 function reportWindowSize() {
+  if (window.innerWidth > 320 && window.innerWidth <= 375) {
+    const curWidth = window.innerWidth;
+    headerDom.style.left = `calc(50% - ${curWidth / 2 + 'px'});`;
+    headerContainerDom.style.minWidth = `${curWidth}px`;
+  }
+  if (window.innerWidth > 375 && window.innerWidth <= 768) {
+    headerDom.style.left = `calc(50% - ${375 / 2 + 'px'});`;
+    headerContainerDom.style.minWidth = `375px`;
+  }
+  if (window.innerWidth > 768 && window.innerWidth <= 1280) {
+    headerDom.style.left = `calc(50% - ${768 / 2 + 'px'});`;
+    headerContainerDom.style.minWidth = `768px`;
+  }
+  if (window.innerWidth > 1280) {
+    headerDom.style.left = `calc(50% - ${1280 / 2 + 'px'});`;
+    headerContainerDom.style.minWidth = `1280px`;
+  }
   // Перевіряємо, чи змінився розмір вікна
   if (isResize !== window.innerWidth > 1279) {
     isResize = window.innerWidth > 1279;

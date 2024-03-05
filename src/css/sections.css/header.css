@@ -1,14 +1,14 @@
 .header {
   z-index: 1;
   position: fixed;
-  left: calc(50% - 187.8px);
+  left: calc(50% - 160px);
   /* filter: opacity(80%); */
 }
 
 .header-container {
   position: absolute;
   top: 20px;
-  min-width: 375px;
+  min-width: 320px;
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -49,6 +49,25 @@
 
 .header-menu {
   stroke: #fbfbfb;
+}
+@media screen and (min-width: 320px), screen and (max-width: 375px) {
+  .header {
+    left: unset;
+  }
+  .header-container {
+    min-width: unset;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .header {
+    left: calc(50% - 187.8px);
+  }
+  .header-container {
+    min-width: 375px;
+    top: 32px;
+    padding: 0 32px;
+  }
 }
 
 @media screen and (min-width: 768px) {
