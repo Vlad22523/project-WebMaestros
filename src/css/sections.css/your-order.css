@@ -32,6 +32,14 @@
   margin-bottom: 40px;
 }
 
+.social-item a {
+  transition: color 200ms linear;
+}
+
+.social-item a:hover {
+  color: #a6f37c;
+}
+
 /*============== ORDER FORM============== */
 
 .order-form {
