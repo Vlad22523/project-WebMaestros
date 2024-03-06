@@ -1,4 +1,8 @@
 /* Reset styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   font-family: 'Inter Tight', sans-serif;
