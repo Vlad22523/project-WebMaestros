@@ -42,6 +42,14 @@
   height: 12px;
 }
 
+.footer-menu-link {
+  transition: color 200ms linear;
+}
+
+.footer-menu-link:hover {
+  color: #b77485;
+}
+
 .footer-text {
   color: #fbfbfb;
   font-size: 14px;
