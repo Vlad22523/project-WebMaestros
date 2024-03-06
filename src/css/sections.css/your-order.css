@@ -33,10 +33,13 @@
 }
 
 .social-item a {
-  transition: color 200ms linear;
+  transition: color 200ms linear,
+    transform 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.social-item a:hover {
+.social-item a:hover,
+.social-item a:focus {
+  transform: scale(105%);
   color: #a6f37c;
 }
 
